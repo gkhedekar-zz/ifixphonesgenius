@@ -1,0 +1,66 @@
+h3
+	@extend %small-bold
+	color: $accent
+	text-align: center
+	padding: 50px 0 20px
+
+.wefix-lockup
+	max-width: 780px
+	+display(flex)
+	margin: 0 auto
+	+align-items(center)
+	+justify-content(space-around)
+
+
+	.shop-img
+		+size(200px)
+		border-radius: 50%
+		background: url(/assets/images/shop-icon.png) center center
+		background-size: cover
+		order: 3
+
+	[class^="icon-"]
+		+size(120px)
+		background-color: $bgcolor
+		border-radius: 50%
+
+		svg
+			margin: 25px
+		g
+			fill: $accent
+
+		&.icon-phone
+			order: 1
+		&.icon-ipod
+			order: 2
+		&.icon-tablet
+			order: 4
+		&.icon-ipad
+			order: 5
+
+@media screen and (max-width: 650px)
+	.wefix-lockup
+		display: block
+		text-align: center
+
+	div:
+		display: inline-block
+
+	.shop-img
+		display: block
+		background-position: center center
+		background-repeat: no-repeat
+		width: auto
+		margin-bottom: 30px
+
+	[class^="icon-"]
+		margin: 10px
+
+
+.blurb
+	max-width: 720px
+	padding: 0 10px
+	margin: 50px auto 50px
+	font-size: 20px
+	font-weight: 300
+	text-align: center

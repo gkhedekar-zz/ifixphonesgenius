@@ -1,0 +1,54 @@
+header
+	height: 450px
+	background: url(../images/bg1.jpg) center center
+	background-size: cover
+
+
+	.logo
+		+size(90px)
+		background: #999
+		margin: 10px 0 0 30px
+		border-radius: 50%
+		float: left
+
+		svg
+			margin: 10px
+
+		g
+			fill: $accent
+
+	nav
+		float: right
+		margin: 20px 30px 0 0
+		a
+			display: inline-block
+			margin-left: 20px
+			color: rgba(0,0,0,0.7)
+			@extend %small-bold
+
+			&:hover
+				color: rgba(0,0,0,1)
+
+	h1
+		text-align: center
+		font:
+			size: 72px
+			weight: 700
+		color: white
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		margin-bottom: 10px
+		clear: both
+		padding-top: 80px
+
+		span
+			display: inline-block
+			padding: 0.2em 0.2em
+			border: white solid 10px
+
+	.kicker
+		text-align: center
+		@extend %small-bold
+		letter-spacing: 0.05em
+		color: white
+		line-height: 1
