@@ -1,0 +1,6 @@
+#-------------  SERVICES -------------
+services:
+- {name: iPhone, repair: iPhones Repair, image: 'iPhone.jpeg'}
+- {name: Android Phone, repair: Android Phones Repair, image: 'and-phone.jpg'}
+- {name: iPad, repair: iPadRepair, image: 'ipad.jpg'}
+- {name: Tablet, repair: Tablets Repair, image: 'tablet.jpg'}

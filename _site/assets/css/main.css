@@ -233,7 +233,7 @@ header nav a, header .kicker, footer .lockup a, h3 {
 
 header {
   height: 450px;
-  background: url(../images/bg1.jpg) center center;
+  background: #e5eaee center center;
   background-size: cover; }
   header .logo {
     height: 90px;
@@ -259,7 +259,7 @@ header {
     text-align: center;
     font-size: 72px;
     font-weight: 700;
-    color: white;
+    color: #e1c184;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 10px;
@@ -268,16 +268,16 @@ header {
     header h1 span {
       display: inline-block;
       padding: 0.2em 0.2em;
-      border: white solid 10px; }
+      border: #e1c184 solid 10px; }
   header .kicker {
     text-align: center;
     letter-spacing: 0.05em;
-    color: white;
+    color: black;
     line-height: 1; }
 
 footer {
   height: 100px;
-  background: url(../images/bg1.jpg) center center;
+  background: url(../images/cracked-bg.jpg) center center;
   background-size: cover; }
   footer .lockup {
     padding: 30px 50px; }
@@ -384,3 +384,49 @@ h3 {
   font-size: 20px;
   font-weight: 300;
   text-align: center; }
+
+.alt-section {
+  background: #e5eaee; }
+
+.thumb-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 50px; }
+  .thumb-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .thumb-container .thumb-unit {
+    width: 25%;
+    height: 200px;
+    padding-top: 20%;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .thumb-container .thumb-unit .thumb-overlay {
+      position: absolute;
+      top: 400px;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(225, 193, 132, 0.9);
+      text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .thumb-container .thumb-unit .thumb-overlay strong {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 20px; }
+    .thumb-container .thumb-unit:hover .thumb-overlay {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px; }

@@ -1,0 +1,20 @@
+<section class="alt-section" id="services">
+
+<h3>Services</h3>
+
+<div class="thumb-container">
+	
+	{% for service in site.data.settings.services %}
+	<a class="thumb-unit" style="background-image: url(/assets/images/{{service.image}})">
+		<div class="thumb-overlay">
+			<strong>{{service.name}}</strong>
+			<b>{{service.repair}}<b>
+			<div class="zoom-icon"></div>
+		</div>
+	</a>
+
+	{% endfor %}
+
+</div>
+
+</section>
