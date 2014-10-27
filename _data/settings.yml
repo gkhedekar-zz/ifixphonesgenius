@@ -1,6 +1,30 @@
+#-------------------------------
+# General Site Settings
+
+title: IFixPhones
+email: ifixphonesgenius.gmail.com
+description: "Where your life is back"
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: Home, url: '#'}
+- {name: About, url: '#about'}
+- {name: Services, url: '#services'}
+- {name: Location, url: '#'}
+- {name: Contact, url: '#contact'}
+
 #-------------  SERVICES -------------
 services:
-- {name: iPhones Repairs- <br> cracked screens <br> OS upgrades, repair: iPhones Repairs, image: 'iPhone.jpeg'}
-- {name: Android Phone, repair: Android Phones Repair, image: 'and-phone.jpg'}
-- {name: iPad, repair: iPadRepair, image: 'ipad.jpg'}
-- {name: Tablet, repair: Tablets Repair, image: 'tablet.jpg'}
+- {name: iPhones Repairs- <br> cracked screens <br> OS upgrades, repair: iPhones Repairs, image: 'iPhone.jpeg', file: 'services/iphone-repair.html' }
+- {name: Android Phone, repair: Android Phones Repair, image: 'and-phone.jpg', file: 'services/androidphone-repair.html'}
+- {name: iPad, repair: iPadRepair, image: 'ipad.jpg', file: 'services/ipad-repair.html'}
+- {name: Tablet, repair: Tablets Repair, image: 'tablet.jpg', file: 'services/tablet-repair.html'}
+
+#-------------------------------
+# Contact Section
+  
+social:
+- {icon: 'twitter', link: 'http://twitter.com/ifixphones'}
+- {icon: 'facebook', link: 'https://facebook.com/ifixphones'}
+- {icon: 'linkedin', link: 'https://linkedin.com/ifixphones'}

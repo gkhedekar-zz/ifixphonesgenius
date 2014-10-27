@@ -1,5 +1,38 @@
-.alt-section
-	background: $bgcolor
+.section-services
+	overflow-x: hidden
+
+.noscript
+	display: none
+
+@each $serv in $services
+	##{$serv}:checked ~ .service-belt .service-wrap .service-container noscript #content-#{$serv}
+		display: block
+
+.return
+	display: none
+
+.trigger
+	display: none
+
+	&:checked ~ .service-belt
+		left: -100%
+
+	.service-wrap .service-container
+		display: block
+/* End of gross / hackey CSS */
+
+.services-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition(all, 800ms)
+
+	&.slided
+		+transform(translate3d(-50%, 0, 0))
+
+.thumb-wrap, .service-wrap
+	width: 50%
+	float: left
 
 .thumb-container
 	max-width: 960px
@@ -8,31 +41,32 @@
 	+clearfix
 
 	.thumb-unit
-		width: 25%
-		height: 200px
-		padding-top: 20%
 		display: block
+		width: 25%
 		float: left
 		position: relative
-		overflow: hidden
-
+		padding-top: 20%
+		cursor: pointer
 		background:
 			position: center center
 			repeat: no-repeat
 			size: cover
 		+perspective(300)
+		@if $animation != "bounceOut"
+			overflow: hidden
+
+		@media screen and (max-width: 760px)
+			width: 50%
+			padding-top: 26%
 
 		.thumb-overlay
-			+position(absolute, 50% 0px null 0px)
-			height: 100%
-			background: fade-out($accent, 0.1)
-			text-align: center
-			+transition
-			+display(flex)
+			+position(absolute)
 			+align-items(center)
 			+justify-content(space-around)
-			+transform(rotateX(90deg))
-			+transform-origin(bottom center)
+			+display(flex)
+			background: fade-out($accent, 0.1)
+			text-align: center
+			@extend %animationstart_#{$animation}
 
 			strong
 				display: block
@@ -43,8 +77,52 @@
 				font-size: 20px
 				line-height: 1.2
 
-		&:hover .thumb-overlay
-			+position(absolute, 0px 0px null 0px)
-			+transform(rotateX(0deg))
+		&:hover
+			z-index: 2
+
+			.thumb-overlay
+				@extend %#{$animation}
+
+.service-container
+	max-width: 600px
+	margin: 0px auto
+	padding: 0 15px
+	+box-sizing(border-box)
+
+	position: relative
+	display: none
+
+	h4, noscript h4
+		color: $accent
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 28px
+		line-height: 1.2
+		margin: 0 0 20px
+  
+	img
+		max-width: 100%
+		margin-bottom: 20px
+
+	.service-return
+		+size(40px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, -4px null null -60px)
+    
+	path
+		fill: rgba(0,0,0,0.4)
+	
+	&:hover
+		opacity: 1
+
+@media (max-width: 740px)
+	.service-container
+    
+		.service-return
+			left: 0px
+    
+	h4
+		margin-left: 60px
 
 

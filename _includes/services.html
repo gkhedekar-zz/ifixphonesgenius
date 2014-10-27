@@ -1,18 +1,45 @@
-<section class="alt-section" id="services">
+<section class="alt-section section-services" id="services">
 
 <h3>Services</h3>
 
-<div class="thumb-container">
-	
-	{% for service in site.data.settings.services %}
-	<a class="thumb-unit" style="background-image: url(/assets/images/{{service.image}})">
-		<div class="thumb-overlay">
-			<strong>{{service.name}}</strong>
-			<div class="zoom-icon"></div>
-		</div>
-	</a>
+ <div class="services-belt">
 
-	{% endfor %}
+ 	<div class="thumb-wrap">
+		<div class="thumb-container">
+			
+			{% for service in site.data.settings.services %}
+			<label for="{{ service.name }}">
+			<div class="thumb-unit" data-folder="{{ service.name }}" style="background-image: url(/assets/images/{{service.image}})">
+				<div class="thumb-overlay">
+					<strong>{{service.name}}</strong>
+				</div>
+			</div>
+			</label>
+
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="service-wrap">
+		<div class="service-container">
+			<label for="return">
+		    	<div class="service-return">{% include icons/icon-back.html %}</div>
+		    </label>
+		    <h4 class="service-title"></h4>
+      		<div class="service-load"></div>
+		
+			<noscript>
+		        {% for service in site.data.settings.services %}
+		          	<div class="noscript" id="content-{{ service.name }}">
+		            <h4 class="service-title">{{ service.name }}</h4>
+		            <div class="noscript-load">
+		              {% include {{service.file}} %}
+		            </div>
+		          	</div>
+		        {% endfor %}
+		     </noscript>
+	     </div>
+	</div>
 
 </div>
 

@@ -1,9 +1,6 @@
 # Site settings
 
-title: IFixPhones
-email: ifixphonesgenius.gmail.com
-description: "Where your life is back"
-
+include: ['_includes/services']
 
 # Build settings
 

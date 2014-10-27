@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title>{{ site.data.settings.title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">  
@@ -15,8 +15,7 @@
 {% include header.html %}
 {% include about.html %}
 {% include services.html %}
-<h3>Welcome! We are coming soon!</h3>
-
+{% include contact.html %}
 {% include footer.html %}
 
 <script src="/assets/js/jquery-2.1.1.min.js"></script>
