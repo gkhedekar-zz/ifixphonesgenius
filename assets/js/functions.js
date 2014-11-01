@@ -29,12 +29,12 @@ function serviceBelt() {
 	$(".return").remove();
 
 	$('.thumb-unit').click(function() {
-	$('.service-belt').addClass("slided");
+	$('.services-belt').addClass("slided");
 	$('.service-container').show();
 	});
 
 	$('.service-return').click(function() {
-	$('.service-belt').removeClass("slided");
+	$('.services-belt').removeClass("slided");
 	$('.service-container').hide(800);
 	});
 
