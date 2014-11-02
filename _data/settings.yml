@@ -16,10 +16,10 @@ menu:
 
 #-------------  SERVICES -------------
 services:
-- {name: iPhones Repairs- <br> cracked screens <br> OS upgrades, repair: iPhones Repairs, image: 'iPhone.jpeg', file: 'services/iphone-repair.html' }
-- {name: Android Phone, repair: Android Phones Repair, image: 'and-phone.jpg', file: 'services/androidphone-repair.html'}
-- {name: iPad, repair: iPadRepair, image: 'ipad.jpg', file: 'services/ipad-repair.html'}
-- {name: Tablet, repair: Tablets Repair, image: 'tablet.jpg', file: 'services/tablet-repair.html'}
+- {name: iPhones, folder: 'iphone', image: 'iPhone.jpeg', file: 'service/iphone.html' }
+- {name: Android Phone, folder: 'androidphone', image: 'and-phone.jpg', file: 'service/androidphone.html'}
+- {name: iPad, folder: 'ipad', image: 'ipad.jpg', file: 'service/ipad.html'}
+- {name: Tablet, folder: 'tablet', image: 'tablet.jpg', file: 'service/tablet.html'}
 
 #-------------------------------
 # Contact Section

@@ -2,14 +2,14 @@
 
 <h3>Services</h3>
 
- <div class="services-belt">
+<div class="services-belt">
 
  	<div class="thumb-wrap">
 		<div class="thumb-container">
 			
 			{% for service in site.data.settings.services %}
 			<label for="{{ service.name }}">
-			<div class="thumb-unit" data-folder="{{ service.name }}" style="background-image: url(/assets/images/{{service.image}})">
+			<div class="thumb-unit" data-folder="{{ service.folder }}" style="background-image: url(/assets/images/service/{{service.folder}}/thumb.jpg)">
 				<div class="thumb-overlay">
 					<strong>{{service.name}}</strong>
 				</div>
@@ -30,7 +30,7 @@
 		
 			<noscript>
 		        {% for service in site.data.settings.services %}
-		          	<div class="noscript" id="content-{{ service.name }}">
+		          	<div class="noscript" id="content-{{ service.folder }}">
 		            <h4 class="service-title">{{ service.name }}</h4>
 		            <div class="noscript-load">
 		              {% include {{service.file}} %}
