@@ -1,3 +1,7 @@
 ---
-title: Typo International Design Talks Stuff
+title: Tablet Repairs
 ---
+
+![Tablet Repairs](assets/images/service/tablet/cracked-screen.png)
+
+Cracked Screens

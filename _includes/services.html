@@ -1,6 +1,11 @@
 <section class="alt-section section-services" id="services">
 
-<h3>Services</h3>
+<h3 id="services">Services</h3>
+	{% for service in site.data.settings.services %}
+	<input type="radio" name="trigger" class="trigger" id="{{ service.folder }}" />
+	{% endfor %}
+
+ 	<input type="radio" name="trigger" id="return" class="return" />
 
 <div class="services-belt">
 
@@ -28,16 +33,6 @@
 		    <h4 class="service-title"></h4>
       		<div class="service-load"></div>
 		
-			<noscript>
-		        {% for service in site.data.settings.services %}
-		          	<div class="noscript" id="content-{{ service.folder }}">
-		            <h4 class="service-title">{{ service.name }}</h4>
-		            <div class="noscript-load">
-		              {% include {{service.file}} %}
-		            </div>
-		          	</div>
-		        {% endfor %}
-		     </noscript>
 	     </div>
 	</div>
 
