@@ -46,7 +46,7 @@ function  serviceLoad() {
   
   $('.thumb-unit').click(function() {
     var $this = $(this),
-        newTitle = $this.find('strong').text(),
+        newTitle = $this.data('folder')+" Repair",
         newfolder = $this.data('folder'),
         spinner = '<div class="loader">Loading...</div>',
         newHTML = 'service/'+ newfolder;

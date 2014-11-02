@@ -14,12 +14,16 @@ menu:
 - {name: Location, url: '#'}
 - {name: Contact, url: '#contact'}
 
+#-------------  ABOUT -------------
+
+
 #-------------  SERVICES -------------
 services:
-- {name: iPhones, folder: 'iphone', image: 'iPhone.jpeg', file: 'service/iphone.html' }
-- {name: Android Phone, folder: 'androidphone', image: 'and-phone.jpg', file: 'service/androidphone.html'}
-- {name: iPad, folder: 'ipad', image: 'ipad.jpg', file: 'service/ipad.html'}
-- {name: Tablet, folder: 'tablet', image: 'tablet.jpg', file: 'service/tablet.html'}
+- {name: iPhones, folder: 'iphone', file: 'service/iphone.html', model: "3G\n3GS\n4\n4S\n5\n5S\n6\n6Plus"}
+- {name: Android Phone, folder: 'androidphone', file: 'service/androidphone.html', model: "Samsung\nHTC\nNexus\nMotorolla"}
+- {name: iPad, folder: 'ipad',  file: 'service/ipad.html', model: "iPad 1-4\niPad Mini"}
+- {name: Tablet, folder: 'tablet', file: 'service/tablet.html', model: "Dell\nNexus\nSurface\nGalaxy Tab"}
+
 
 #-------------------------------
 # Contact Section
