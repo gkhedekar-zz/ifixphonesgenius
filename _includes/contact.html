@@ -4,13 +4,23 @@
   
   
   <div class="social-links">
+  	<h4>Visit us on our social sites</h4>
     {% for link in site.data.settings.social %}
     <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
     {% endfor %}
   </div>
   
-  <hr class="bar">
-  
   <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+
+  <div class="location">
+  	<div class="address">
+  	<h4>Address</h4> 
+  	<p>Address - 210 Andover St. Peabody, MA 01960 - Northshore Mall</p>
+  	<p>Monday-Saturday : 10am - 8pm</p>
+  	</div>
+  	<div class="map">
+  	{% include location-map.html %}
+  	</div>
+  </div>
   
 </section>

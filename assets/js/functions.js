@@ -30,11 +30,13 @@ function serviceBelt() {
 
 	$('.thumb-unit').click(function() {
 	$('.services-belt').addClass("slided");
+  $('.service-blurb').hide(800);
 	$('.service-container').show();
 	});
 
 	$('.service-return').click(function() {
 	$('.services-belt').removeClass("slided");
+  $('.service-blurb').show();
 	$('.service-container').hide(800);
 	});
 
