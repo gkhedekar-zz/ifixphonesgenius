@@ -4,14 +4,10 @@
 
 <div class="wefix-lockup">
     
-    <div class="shop-img"></div>
-    
-    <div class="icon-phone">{% include icons/icon-phone.html %}</div>
-    <div class="icon-ipod">{% include icons/icon-ipod.html %}</div>
-    <div class="icon-tablet">{% include icons/icon-tablet.html %}</div>
-    <div class="icon-ipad">{% include icons/icon-ipad.html %}</div>
+    {% for attribute in site.data.settings.about-attrs %}
+    <div class="icon-{{ attribute.attr }}" style="background-image: url(/assets/images/{{attribute.attr-img}}.jpg)"></div>
+    {% endfor %}
 
-    </div>
  </div>
 
 <div class="blurb">

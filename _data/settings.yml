@@ -14,7 +14,11 @@ menu:
 - {name: Contact, url: '#contact'}
 
 #-------------  ABOUT -------------
-
+about-attrs:
+- {attr: warranty, attr-img: warranty}
+- {attr: sameday, attr-img: same_day}
+- {attr: nogeeks, attr-img: no_geeks}
+- {attr: freeestimate, attr-img: free_estimate}
 
 #-------------  SERVICES -------------
 services:
@@ -29,5 +33,5 @@ services:
   
 social:
 - {icon: 'twitter', link: 'http://twitter.com/ifixphones'}
-- {icon: 'facebook', link: 'https://facebook.com/ifixphones'}
+- {icon: 'facebook', link: 'https://facebook.com/ifixphonesgenius'}
 - {icon: 'linkedin', link: 'https://linkedin.com/ifixphones'}
